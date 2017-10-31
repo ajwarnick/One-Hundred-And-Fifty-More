@@ -1,0 +1,24 @@
+{
+  "name": "One_Hundred_And_Fifty_More",
+  "productName": "One_Hundred_And_Fifty_More",
+  "version": "1.0.0",
+  "description": "Digital Projection (Black and White, Silent)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/ajwarnick/One-Hundred-And-Fifty-More",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Anthony Warnick",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.7.8",
+    "electron-packager": "^9.1.0"
+  }
+}
