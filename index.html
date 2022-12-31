@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>"One Hundred And Fifty More”, 2017 - Anthony Warnick</title>
+    <title>"One Hundred And Fifty More” - Anthony Warnick</title>
     <style>
       body{
         background: black;
@@ -11,16 +11,34 @@
       #main{
         width: 100%;
       }
+      #shade.none{
+        opacity: 0;
+      }
+      #shade{
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+        transition-property: opacity;
+        transition-duration: 100ms;
+        transition-delay: 400ms;
+      }
     </style>
 
   </head>
   <body>
-    <video id="main" >
-      <source src="video/the.defiant.ones.mp4" type="video/mp4">
-    </video>    
-    <script>
+    <div id="shade" ></div>
+    <video id="main">
+      <source src="video/one_hundred_and_fifty_more_2023.mp4" type="video/mp4">
+    </video>   
+    
+    <script type="module" src="renderer.js"></script>
+    <!-- <script>
       // You can also require other files to run in this process
       require('./renderer.js')
-    </script>
+    </script> -->
   </body>
 </html>
